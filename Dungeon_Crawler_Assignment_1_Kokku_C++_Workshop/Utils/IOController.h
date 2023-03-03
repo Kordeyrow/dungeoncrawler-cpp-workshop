@@ -7,8 +7,8 @@ using namespace std;
 class IOController
 {
 public: 
-	void Write(string text);
-	void WriteLine(string text);
-	string Read();
+	void ShowMessageToUser(string text, bool stylized = true, bool newline = true);
+	string ReadUserInput();
+	void Stall();
 };
 

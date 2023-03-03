@@ -1,8 +1,14 @@
 #pragma once
+
+#include "../../../Utils/IOController.h"
+
 class GameFlowManager
 {
-	bool gameStarted;
+	IOController _IOController;
+	bool _gameStarted;
 public:
 	void StartGame();
+private:
+	void Get_BattleSetup_FromUser();
 };
 

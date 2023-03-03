@@ -132,6 +132,7 @@
     <ClCompile Include="Dungeon_Crawler_Assignment_1_Kokku_C++_Workshop.cpp" />
     <ClCompile Include="GameSystems\GameFlowSystem\Managers\GameFlowManager.cpp" />
     <ClCompile Include="GameSystems\BattleSystem\Entities\PlayerCharacter.cpp" />
+    <ClCompile Include="GameConfig\UserMessages.cpp" />
     <ClCompile Include="Utils\IOController.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +140,7 @@
     <ClInclude Include="GameSystems\BattleSystem\Managers\BattleManager.h" />
     <ClInclude Include="GameSystems\GameFlowSystem\Managers\GameFlowManager.h" />
     <ClInclude Include="GameSystems\BattleSystem\Entities\PlayerCharacter.h" />
+    <ClInclude Include="GameConfig\UserMessages.h" />
     <ClInclude Include="Utils\IOController.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

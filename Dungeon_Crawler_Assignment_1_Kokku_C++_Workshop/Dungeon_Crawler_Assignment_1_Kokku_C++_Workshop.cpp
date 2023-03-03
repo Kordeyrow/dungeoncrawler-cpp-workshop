@@ -2,13 +2,12 @@
 //
 
 #include <iostream>
-#include "Utils/IOController.h"
+#include "GameSystems/GameFlowSystem/Managers/GameFlowManager.h"
 
 int main()
 {
-    IOController IOController;
-    IOController.WriteLine("Hello World!");
-    IOController.WriteLine("Hello World!");
+    GameFlowManager GameFlowManager;
+    GameFlowManager.StartGame();
 }
 
 // Executar programa: Ctrl + F5 ou Menu Depurar > Iniciar Sem Depuração
