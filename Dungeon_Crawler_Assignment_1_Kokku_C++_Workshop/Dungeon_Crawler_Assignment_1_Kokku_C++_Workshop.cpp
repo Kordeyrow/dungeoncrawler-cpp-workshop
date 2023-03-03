@@ -2,10 +2,13 @@
 //
 
 #include <iostream>
+#include "Utils/IOController.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    IOController IOController;
+    IOController.WriteLine("Hello World!");
+    IOController.WriteLine("Hello World!");
 }
 
 // Executar programa: Ctrl + F5 ou Menu Depurar > Iniciar Sem Depuração
