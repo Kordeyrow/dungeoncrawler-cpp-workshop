@@ -1,18 +1,9 @@
 #include "GameFlowManager.h"
-#include "../../../GameConfig/UserMessages.h"
+#include "../../BattleSystem/Managers/BattleManager.h"
 
-string characterName;
-
-void GameFlowManager::StartGame()
+void GameFlowManager::Init()
 {
-	Get_BattleSetup_FromUser();
 	_gameStarted = true;
-}
-
-void GameFlowManager::Get_BattleSetup_FromUser()
-{
-	_IOController.ShowMessageToUser(UserMessages::InputRequest::PLAYER_CHARACTER_NAME);
-	characterName = _IOController.ReadUserInput();
-	_IOController.ShowMessageToUser(UserMessages::InputConfirmation::PlayerCharacterName(characterName));
-	_IOController.Stall();
+	BattleManager battleManager;
+	battleManager.Init();
 }

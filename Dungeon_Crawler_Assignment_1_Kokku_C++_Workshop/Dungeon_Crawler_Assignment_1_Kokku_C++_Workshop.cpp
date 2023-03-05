@@ -7,7 +7,7 @@
 int main()
 {
     GameFlowManager GameFlowManager;
-    GameFlowManager.StartGame();
+    GameFlowManager.Init();
 }
 
 // Executar programa: Ctrl + F5 ou Menu Depurar > Iniciar Sem Depuração
