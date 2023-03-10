@@ -33,8 +33,8 @@ void BattleManager::GetSetupFromUser()
 
 void BattleManager::GenerateEnemies() {
 	enemies = { 
-		Enemy(Size::Small), 
-		Enemy(Size::Medium), 
-		Enemy(Size::Big) 
+		Enemy(Size::Small, 100), 
+		Enemy(Size::Medium, 100),
+		Enemy(Size::Big, 100)
 	};
 }

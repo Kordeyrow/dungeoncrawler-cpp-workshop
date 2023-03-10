@@ -1,6 +1,6 @@
 #include "Enemy.h"
 
-Enemy::Enemy(Size _size)
+Enemy::Enemy(Size size, int maxHealthValue) : 
+	_size(size), _health(maxHealthValue)
 {
-	Enemy::size = _size;
 }
