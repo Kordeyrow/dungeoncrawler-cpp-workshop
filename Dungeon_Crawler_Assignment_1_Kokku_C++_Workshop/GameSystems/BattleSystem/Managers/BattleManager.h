@@ -2,7 +2,7 @@
 
 #include "../../../Utils/IOController.h"
 #include "../../../GameConfig/UserMessages.h"
-#include "../Entities/Enemy.h"
+#include "../../EntitySystem/Entities/Enemy.h"
 #include <vector>
 
 class BattleManager

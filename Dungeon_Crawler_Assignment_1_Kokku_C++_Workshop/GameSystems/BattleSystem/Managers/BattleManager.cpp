@@ -1,4 +1,6 @@
 #include "BattleManager.h"
+#include <iostream>
+//#include <format>
 
 void BattleManager::Run()
 {
@@ -37,4 +39,5 @@ void BattleManager::GenerateEnemies() {
 		Enemy(Size::Medium, 100),
 		Enemy(Size::Big, 100)
 	};
+	//cout << SizeUtil::SizeName(Size::Small);
 }

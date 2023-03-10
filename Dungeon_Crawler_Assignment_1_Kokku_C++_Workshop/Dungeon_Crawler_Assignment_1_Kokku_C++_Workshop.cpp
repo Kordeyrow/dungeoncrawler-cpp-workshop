@@ -6,7 +6,8 @@
 
 int main()
 {
-    GameFlowManager gameFlowManager;
+    std::cout << __cplusplus << '\n';
+    GameFlowManager gameFlowManager{};
     gameFlowManager.Run();
 }
 

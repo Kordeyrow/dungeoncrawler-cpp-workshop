@@ -1,5 +1,9 @@
 #pragma once
 
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
 class Health
 {
 	int _maxValue;

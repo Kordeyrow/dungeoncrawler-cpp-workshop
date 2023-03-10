@@ -1,8 +1,4 @@
 #include "Health.h"
-#include <algorithm>]
-#include <iostream>]
-using namespace std;
-
 
 Health::Health(int maxValue) {
 	_maxValue = maxValue;

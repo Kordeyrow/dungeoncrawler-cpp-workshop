@@ -127,23 +127,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GameSystems\BattleSystem\Entities\Enemy.cpp" />
+    <ClCompile Include="GameSystems\EntitySystem\Actions\Attack.cpp" />
+    <ClCompile Include="GameSystems\EntitySystem\Entities\Enemy.cpp" />
     <ClCompile Include="GameSystems\BattleSystem\Managers\BattleManager.cpp" />
     <ClCompile Include="Dungeon_Crawler_Assignment_1_Kokku_C++_Workshop.cpp" />
     <ClCompile Include="GameSystems\GameFlowSystem\Managers\GameFlowManager.cpp" />
-    <ClCompile Include="GameSystems\BattleSystem\Entities\PlayerCharacter.cpp" />
+    <ClCompile Include="GameSystems\EntitySystem\Entities\PlayerCharacter.cpp" />
     <ClCompile Include="GameConfig\UserMessages.cpp" />
-    <ClCompile Include="GameSystems\BattleSystem\Entities\Components\Health.cpp" />
+    <ClCompile Include="GameSystems\EntitySystem\Attributes\Health.cpp" />
+    <ClCompile Include="GameSystems\EntitySystem\Attributes\Size.cpp" />
     <ClCompile Include="Utils\InputValidator.cpp" />
     <ClCompile Include="Utils\IOController.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameSystems\BattleSystem\Entities\Enemy.h" />
+    <ClInclude Include="GameSystems\EntitySystem\Actions\Attack.h" />
+    <ClInclude Include="GameSystems\EntitySystem\Entities\Enemy.h" />
     <ClInclude Include="GameSystems\BattleSystem\Managers\BattleManager.h" />
     <ClInclude Include="GameSystems\GameFlowSystem\Managers\GameFlowManager.h" />
-    <ClInclude Include="GameSystems\BattleSystem\Entities\PlayerCharacter.h" />
+    <ClInclude Include="GameSystems\EntitySystem\Entities\PlayerCharacter.h" />
     <ClInclude Include="GameConfig\UserMessages.h" />
-    <ClInclude Include="GameSystems\BattleSystem\Entities\Components\Health.h" />
+    <ClInclude Include="GameSystems\EntitySystem\Attributes\Health.h" />
+    <ClInclude Include="GameSystems\EntitySystem\Attributes\Size.h" />
     <ClInclude Include="Utils\InputValidator.h" />
     <ClInclude Include="Utils\IOController.h" />
   </ItemGroup>
