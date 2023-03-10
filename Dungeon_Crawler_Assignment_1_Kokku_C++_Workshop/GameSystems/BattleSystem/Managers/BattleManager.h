@@ -2,14 +2,19 @@
 
 #include "../../../Utils/IOController.h"
 #include "../../../GameConfig/UserMessages.h"
+#include "../Entities/Enemy.h"
+#include <vector>
 
 class BattleManager
 {
-	string _playerCharacterName;
 	IOController _IOController;
+	int _enemiesAmount;
+	string _playerCharacterName;
+	vector<Enemy> enemies;
 public:
-	void Init();
+	void Run();
 private:
-	void Get_BattleSetup_FromUser();
+	void GetSetupFromUser();
+	void GenerateEnemies();
 };
 

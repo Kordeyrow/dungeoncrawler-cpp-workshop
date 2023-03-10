@@ -1,21 +1,18 @@
 #include "IOController.h"
 
-const string STYLIZING_PREFIX = "  >>  ";
-const string STYLIZING_PPOSFIX = "";
+const string STYLIZATION_USER_PREFIX = "   : ";
+const string STYLIZATION_PREFIX = "  >>  ";
+const string STYLIZATION_POSFIX = "";
 
 string IOController::ReadUserInput() {
+	cout << STYLIZATION_USER_PREFIX;
 	string input;
-	cin >> input;
+	getline(cin, input);
 	return input;
 }
 
 void IOController::ShowMessageToUser(string text, bool stylized, bool newline) {
 	string finalText = "";
-	finalText = (stylized ? STYLIZING_PREFIX : "") + text + (stylized ? STYLIZING_PPOSFIX : "") + (newline ? "\n" : "");
+	finalText = (stylized ? STYLIZATION_PREFIX : "") + text + (stylized ? STYLIZATION_POSFIX : "") + (newline ? "\n" : "");
 	cout << finalText;
-}
-
-void IOController::Stall() {
-	ShowMessageToUser("Press any key to end. . .", false, false);
-	system("pause > nul");
 }
